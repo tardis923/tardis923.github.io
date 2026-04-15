@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>Tools</title>
+
+<style>
+    :root {
+        --bg: #f5f5f7;
+        --text-main: #1d1d1f;
+        --text-sub: #86868b;
+        --card-bg: #ffffff;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial;
+        background: var(--bg);
+        color: var(--text-main);
+        scroll-behavior: smooth;
+    }
+
+    /* Hero */
+    .hero {
+        text-align: center;
+        padding: 120px 20px 100px;
+    }
+
+    .hero h1 {
+        font-size: clamp(48px, 6vw, 80px);
+        font-weight: 600;
+        letter-spacing: -1px;
+        margin-bottom: 16px;
+    }
+
+    .hero p {
+        font-size: 24px;
+        color: var(--text-sub);
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.4;
+    }
+
+    /* Grid */
+    .container {
+        max-width: 980px;
+        margin: auto;
+        padding: 0 20px 100px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+    }
+
+    /* Card */
+    .card {
+        background: var(--card-bg);
+        border-radius: 20px;
+        padding: 50px 30px;
+        text-align: center;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+
+    .icon {
+        font-size: 56px;
+        margin-bottom: 24px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 16px;
+        color: var(--text-sub);
+        line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 13px;
+        color: var(--text-sub);
+    }
+
+    footer a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<section class="hero">
+    <h1>工具箱</h1>
+    <p>专注实用，简洁高效，随时可用。</p>
+</section>
+
+<!-- Tools -->
+<div class="container">
+    <div class="grid">
+
+        <!-- ===== 工具入口 ===== -->
+        <a href="https://tardis923.github.io/A4toA3/" target="_blank" class="card">
+            <div class="icon">📄</div>
+            <h3>A4 → A3 合并工具（PDF版）</h3>
+            <p>A4试卷变A3试卷</p>
+        </a>
+
+        <a href="https://tardis923.github.io/kaoguan/" target="_blank" class="card">
+            <div class="icon">👨‍⚖️</div>
+            <h3>考官编排</h3>
+            <p>考官编排</p>
+        </a>
+
+        <a href="https://tardis923.github.io/examPro/" target="_blank" class="card">
+            <div class="icon">🕵️</div>
+            <h3>监考编排</h3>
+            <p>监考编排</p>
+        </a>
+
+        <a href="https://tardis923.github.io/ntce/" target="_blank" class="card">
+            <div class="icon">📚</div>
+            <h3>学科编排</h3>
+            <p>学科编排</p>
+        </a>
+
+<a href="https://tardis923.github.io/keshi/" target="_blank" class="card">
+            <div class="icon">⏱️</div>
+            <h3>课时计算</h3>
+            <p>课时计算</p>
+        </a>
+        <!-- ===================== -->
+
+    </div>
+</div>
+
+<footer>
+    © 2026 · Designed like Apple · <a href="https://github.com/tardis923">GitHub</a>
+</footer>
+
+</body>
+</html>
