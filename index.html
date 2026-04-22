@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
-<title>Tools</title>
+<title>工具箱</title>
 
 <style>
     :root {
@@ -19,13 +19,14 @@
     }
 
     body {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial;
+        font-family: -apple-system, BlinkMacSystemFont,
+                     "SF Pro Display", "Helvetica Neue",
+                     Helvetica, Arial;
         background: var(--bg);
         color: var(--text-main);
         scroll-behavior: smooth;
     }
 
-    /* Hero */
     .hero {
         text-align: center;
         padding: 120px 20px 100px;
@@ -46,7 +47,6 @@
         line-height: 1.4;
     }
 
-    /* Grid */
     .container {
         max-width: 980px;
         margin: auto;
@@ -59,7 +59,6 @@
         gap: 28px;
     }
 
-    /* Card */
     .card {
         background: var(--card-bg);
         border-radius: 20px;
@@ -76,8 +75,14 @@
     }
 
     .icon {
-        font-size: 56px;
         margin-bottom: 24px;
+    }
+
+    .icon svg {
+        width: 64px;
+        height: 64px;
+        display: block;
+        margin: 0 auto;
     }
 
     .card h3 {
@@ -92,7 +97,6 @@
         line-height: 1.5;
     }
 
-    /* Footer */
     footer {
         text-align: center;
         padding: 40px 20px;
@@ -109,47 +113,85 @@
 
 <body>
 
-<!-- Hero -->
 <section class="hero">
     <h1>工具箱</h1>
     <p>专注实用，简洁高效，随时可用。</p>
 </section>
 
-<!-- Tools -->
 <div class="container">
     <div class="grid">
 
-        <!-- ===== 工具入口 ===== -->
+        <!-- A4 → A3 合并 -->
         <a href="https://tardis923.github.io/A4toA3/" target="_blank" class="card">
-            <div class="icon">📄</div>
-            <h3>A4转A3（PDF版）</h3>
-            <p>A4试卷变A3试卷</p>
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="2" width="16" height="20" rx="2"
+                          fill="#ffffff" stroke="#d1d1d6" stroke-width="1.5"/>
+                    <path d="M8 8h8M8 12h5M8 16h4"
+                          stroke="#007aff" stroke-width="1.5" stroke-linecap="round"/>
+                    <text x="12" y="22" text-anchor="middle"
+                          font-size="6" fill="#007aff">PDF</text>
+                </svg>
+            </div>
+            <h3>A4 → A3 合并工具（PDF版）</h3>
+            <p>将多页 A4 PDF 合并为 A3 排版</p>
         </a>
 
+        <!-- 考官编排 -->
         <a href="https://tardis923.github.io/kaoguan/" target="_blank" class="card">
-            <div class="icon">👨‍⚖️</div>
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="4" fill="#007aff"/>
+                    <path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="#bfd8ff"/>
+                    <rect x="9" y="14" width="6" height="3" rx="1" fill="#007aff"/>
+                </svg>
+            </div>
             <h3>考官编排</h3>
-            <p>考官编排</p>
+            <p>自动生成考官安排表</p>
         </a>
 
+        <!-- 监考编排 -->
         <a href="https://tardis923.github.io/examPro/" target="_blank" class="card">
-            <div class="icon">🕵️</div>
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="4" fill="#5856d6"/>
+                    <path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="#c7c7cc"/>
+                    <circle cx="12" cy="12" r="2" fill="#5856d6"/>
+                </svg>
+            </div>
             <h3>监考编排</h3>
-            <p>监考编排</p>
+            <p>快速排布监考任务</p>
         </a>
 
+        <!-- 学科编排 -->
         <a href="https://tardis923.github.io/ntce/" target="_blank" class="card">
-            <div class="icon">📚</div>
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="4" width="16" height="16" rx="2"
+                          fill="#ffffff" stroke="#af52de" stroke-width="1.5"/>
+                    <path d="M8 8h8M8 12h8M8 16h5"
+                          stroke="#af52de" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
             <h3>学科编排</h3>
-            <p>学科编排</p>
+            <p>按学科自动分配课程</p>
         </a>
 
-<a href="https://tardis923.github.io/keshi/" target="_blank" class="card">
-            <div class="icon">🧮</div>
+        <!-- 课时计算 -->
+        <a href="https://tardis923.github.io/keshi/" target="_blank" class="card">
+            <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <rect x="4" y="4" width="16" height="16" rx="2"
+                          fill="#34c759" stroke="#1d1d1f" stroke-width="1"/>
+                    <text x="12" y="14" text-anchor="middle"
+                          font-size="8" fill="#ffffff" font-weight="bold">+</text>
+                    <text x="12" y="20" text-anchor="middle"
+                          font-size="5" fill="#d1f7c4">CALC</text>
+                </svg>
+            </div>
             <h3>课时计算</h3>
-            <p>课时计算</p>
+            <p>统计教师课时与工作量</p>
         </a>
-        <!-- ===================== -->
 
     </div>
 </div>
